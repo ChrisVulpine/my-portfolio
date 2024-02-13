@@ -1,5 +1,5 @@
 :root {
-    --base-font-size: 16px; /* Add this line */
+    --base-font-size: 16px;
     --main-deep-blue: rgb(18, 43, 64);
     --hover-blue: rgb(10, 25, 37);
     --main-font-color: rgb(72, 238, 221);
@@ -7,12 +7,12 @@
 }
 
 body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: var(--base-font-size);
     background: linear-gradient(rgb(35, 36, 36), rgb(17, 19, 19));
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--main-font-color);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 10px;
 }
 
@@ -41,10 +41,12 @@ h2 {
     font-size: 40px;
     
 }
+
 h3 {
     font-size: 30px;
     color: white;
 }
+
 h4 {
     font-size: 30px;
     padding: 20px;
@@ -75,6 +77,7 @@ a {
 
 /* Resume Photo and About Me Section */
 
+/*vvvRename this class vvv*/
 .resume-photo {
     background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
     height: auto;
@@ -83,10 +86,8 @@ a {
     box-shadow: 0px 5px 10px black;
     border-radius: 17px;
     margin: 20px;
-    
-
 }
-
+/*vvvRename this class vvv*/
 #resume-pic {
     height: 250px;
     width: 370px;
@@ -94,38 +95,17 @@ a {
     padding-right: 5px;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px; 
 }
-/*DISABLED
-.tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    right: 73%;
-    bottom: 64%;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .resume-photo:hover .tooltiptext {
-    visibility: visible;
-  }
-*/
-
 
 #about-me-text {
     text-align: left;
     color: white;
-
 }
 
 /* Latest Work Section */
 
+/*vvvRename this class vvv*/
 .work-section {
     background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
     position:relative;
@@ -133,12 +113,12 @@ a {
     border-radius: 17px;
     margin-bottom: 30px;
     box-shadow: 0px 10px 10px black;
-    width: 100%; /* Make the section full width */
-    max-width: 1000px; /* Set a maximum width for larger screens */
-    margin: 0 auto; /* Center the section */
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
-
+/*vvvRename this class vvv*/
 #latest-work {
     display: flex;
     width: auto;
@@ -149,15 +129,14 @@ a {
     display: flex;
     justify-content: center;
     border-radius: 17px;
-    width: 100%; /* Make images responsive */
-    max-width: 600px; /* Set a maximum width for larger screens */
-    left: 0; /* Center image on smaller screens */
+    width: 100%; 
+    max-width: 600px;
 }
 
 .latest-work-img:hover {
     box-shadow: 0 0 10px 5px rgb(64, 217, 207);
 }
-
+ /*vvvRename this class vvv*/
 .text-block {
     position: absolute;
     width: 300px;
@@ -171,18 +150,16 @@ a {
     padding-right: 20px;
     border-radius: 17px;
     box-shadow: 0px 4px 5px black;
-    width: 100%; /* Full width on smaller screens */
-    max-width: 400px; /* Set a maximum width for larger screens */
-    left: 0; /* Center text on smaller screens */
-    right: auto; /* Reset right positioning */
+    width: 100%; 
+    max-width: 400px; 
+    right: auto;
   }
 
   .latest-work-description {
     text-align: left;
     padding: 20px;
     color: white;
-    top: 0; /* Move description to the top on smaller screens */
-    position: relative; /* Adjust positioning */
+    position: relative;
   }
 
   /* Other Work Section */
@@ -203,7 +180,7 @@ a {
     border-radius: 20px;
     height: 400px;
     width: 400px;
-    margin: 10px auto; /* Center items on smaller screens */
+    margin: 10px auto;
 }
 
 #work-1-img {
@@ -225,10 +202,6 @@ a {
     box-shadow: 0px 4px 5px black;
   }
 
-.other-work-img:hover {
-    box-shadow: 0 0 10px 5px rgb(64, 217, 207);
-}
-
 #work-2 {
     margin-top: 30px;
     margin-right: 20px;
@@ -236,7 +209,7 @@ a {
     border-radius: 20px;
     height: 400px;
     width: 400px;
-    margin: 10px auto; /* Center items on smaller screens */
+    margin: 10px auto;
 }
 
 #work-2-img {
@@ -247,18 +220,22 @@ a {
 
 #work-3 {
     margin-top: 30px;
-    border: solid 2px white;
     border-radius: 20px;
+    border: solid 2px white;
     height: 400px;
     width: 400px;
     margin-bottom: 30px;
-    margin: 10px auto; /* Center items on smaller screens */
+    margin: 10px auto;
 }
 
 #work-3-img {
     border-radius: 20px;
     height: 250px;
     width: 400px;
+}
+
+.other-work-img:hover {
+    box-shadow: 0 0 10px 5px rgb(64, 217, 207);
 }
 
 /* Footer */
@@ -269,11 +246,9 @@ a {
         color: var(--main-font-color);
         width: 60px;
         flex-wrap: none;
-        font-size: 1rem; /* Responsive font size */
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    text-align: center; /* Center text on smaller screens */
+        font-size: 1rem;
+        text-align: center;
 }
-    
 
 .contact-links {
     display: flex;
@@ -281,9 +256,9 @@ a {
     border-radius: 20px;
     justify-content: center;
     color: white;
-    width: 100%; /* Full width on smaller screens */
-    max-width: 600px; /* Set a maximum width for larger screens */
-    margin: 0 auto; /* Center the section */
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
 .contact-links:hover {
@@ -292,7 +267,11 @@ a {
 
 /* Media Queries */
 
+
+     /* Small Screens */
+
 @media screen and (max-width: 600px) {
+
     body {
         font-size: 14px;
     }
@@ -304,52 +283,24 @@ a {
     .other-work {
         height: 100%;
         display: flex;
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
         border-radius: 17px;
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
     
     }
+    /*vvvRename this classvvv*/
     .work-section {
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
-        position:relative;
-        border: solid 2px white;
-        border-radius: 17px;
-        margin-bottom: 30px;
-        box-shadow: 0px 10px 10px black;
-        width: 80%; /* Make the section full width */
-        max-width: 1000px; /* Set a maximum width for larger screens */
-        margin: 0 auto; /* Center the section */
+        width: 80%; 
         display: flex;
         justify-content: center;
         padding-top: 20px;
-    
     }
 
-    .latest-work-img {
-        /*position:absolute;*/
-        width: 500px;
-        height: 300px; 
-        border-radius: 17px;
-        width: 100%; /* Make images responsive */
-        max-width: 600px; /* Set a maximum width for larger screens */
-        left: 0; /* Center image on smaller screens */
-    }
     #latest-work {
-        display:flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
     }
-    
-    .latest-work-img {
-        display: flex;
-        justify-content: center;
-        border-radius: 17px;
-        width: 100%; /* Make images responsive */
-        max-width: 600px; /* Set a maximum width for larger screens */
-        left: 0; /* Center image on smaller screens */
-    }
+    /*vvvRename this class vvv*/
 
+    /*STOPPED HERE BOTTOM*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .text-block {
     position:relative;
     display: flex;
@@ -363,10 +314,10 @@ a {
     padding-right: 20px;
     border-radius: 17px;
     box-shadow: 0px 4px 5px black;
-    width: 87%; /* Full width on smaller screens */
-    max-width: 350px; /* Set a maximum width for larger screens */
+    width: 87%; 
+    max-width: 350px; 
     top: 1%;
-    left: 1%; /* Center text on smaller screens */
+    left: 1%; 
     font-size: 18px;
   }
 
