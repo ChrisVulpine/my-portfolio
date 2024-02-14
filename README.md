@@ -2,7 +2,7 @@
 
 ## Description
 
-My goal with this project was to use what I know of HTML and CSS to build my starting portfolio as a developer. I wanted my project to display in a crisp and clean fastion while also adapting to different screen sizes. I learned a great deal about media queries and flex properties for CSS. Overall I am pleased with the result!
+My goal with this project was to use what I know of HTML and CSS to build my starting portfolio as a developer. I wanted my project to display in a crisp and clean fashion while also adapting to different screen sizes. I learned a great deal about media queries and flex properties for CSS. Overall I am pleased with the result!
 
 ## Deployed Application
 
