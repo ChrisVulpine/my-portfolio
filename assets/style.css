@@ -318,18 +318,7 @@ a {
         top: 20px;
         margin: inherit;
     }
-    .other-work {
-        margin-top: 30px;
-        margin-right: 20px;
-        margin-left: 185px;
-        border: solid 2px white;
-        border-radius: 20px;
-        height: 400px;
-        width: 400px;
-        margin: 10px auto;
-    }
 
-    /*
     .other-work {
         height: 100%;
         display: flex;
@@ -337,7 +326,7 @@ a {
         flex-direction: column;
     
     }
-*/
+    
     .footer-contact-me {
         padding-left: 10px;
         padding-top: 5px;
@@ -378,7 +367,7 @@ a {
         max-width: 350px; 
         top: 1%;
         left: 1%; 
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .latest-work-description {
