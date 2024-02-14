@@ -272,6 +272,71 @@ a {
 
 /* Media Queries */
 
+    /* Phone Screens */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    .latest-work-container {
+        width: 80%; 
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #latest-work {
+        flex-direction: column;
+    }
+    
+    .latest-work-text-block {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        width: 87%; 
+        max-width: 350px; 
+        top: 1%;
+        left: 1%; 
+        font-size: 18px;
+    }
+
+    .latest-work-description {
+        display:flex;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    h4 {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        margin: inherit;
+    }
+
+    .other-work {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        border-radius: 17px;
+        flex-direction: column;
+    
+    }
+
+    .footer-contact-me {
+        padding-left: 10px;
+        padding-top: 5px;
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+
+}
+
      /* Small Screens */
 
 @media screen and (max-width: 600px) {
