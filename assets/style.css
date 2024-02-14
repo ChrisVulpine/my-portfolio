@@ -28,24 +28,31 @@ header {
     padding: 1rem;
 }
 
-/* headers */
+/* Headers */
 
-h1 {
+    /* My Name */
+
+h1 { 
     padding-left: 20px;
 }
+
+    /* Section Headers */
 
 h2 {
     text-align: center;
     padding: 10px;
     margin-top: 50px;
     font-size: 40px;
-    
 }
+
+    /* About Me Title */
 
 h3 {
     font-size: 30px;
     color: white;
 }
+
+    /* Latest Work Title */
 
 h4 {
     font-size: 30px;
@@ -77,8 +84,7 @@ a {
 
 /* Resume Photo and About Me Section */
 
-/*vvvRename this class vvv*/
-.resume-photo {
+.about-me-container {
     background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
     height: auto;
     width: auto;
@@ -87,7 +93,7 @@ a {
     border-radius: 17px;
     margin: 20px;
 }
-/*vvvRename this class vvv*/
+
 #resume-pic {
     height: 250px;
     width: 370px;
@@ -105,8 +111,7 @@ a {
 
 /* Latest Work Section */
 
-/*vvvRename this class vvv*/
-.work-section {
+.latest-work-container {
     background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
     position:relative;
     border: solid 2px white;
@@ -116,9 +121,8 @@ a {
     width: 100%; 
     max-width: 1000px;
     margin: 0 auto;
-
 }
-/*vvvRename this class vvv*/
+
 #latest-work {
     display: flex;
     width: auto;
@@ -136,8 +140,8 @@ a {
 .latest-work-img:hover {
     box-shadow: 0 0 10px 5px rgb(64, 217, 207);
 }
- /*vvvRename this class vvv*/
-.text-block {
+
+.latest-work-text-block {
     position: absolute;
     width: 300px;
     height: 50px;
@@ -189,19 +193,6 @@ a {
     width: 400px;
 }
 
-.text-block-other {
-    position: relative;
-    text-align: center;
-    background-color: var(--hover-blue );
-    color: white;
-    height: 50px;
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 17px;
-    bottom: 55px;
-    box-shadow: 0px 4px 5px black;
-  }
-
 #work-2 {
     margin-top: 30px;
     margin-right: 20px;
@@ -238,6 +229,20 @@ a {
     box-shadow: 0 0 10px 5px rgb(64, 217, 207);
 }
 
+.text-block-other {
+    position: relative;
+    text-align: center;
+    background-color: var(--hover-blue );
+    color: white;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 17px;
+    bottom: 55px;
+    box-shadow: 0px 4px 5px black;
+  }
+
+
 /* Footer */
 
 .footer-contact-me {
@@ -267,7 +272,6 @@ a {
 
 /* Media Queries */
 
-
      /* Small Screens */
 
 @media screen and (max-width: 600px) {
@@ -287,8 +291,8 @@ a {
         flex-direction: column;
     
     }
-    /*vvvRename this classvvv*/
-    .work-section {
+
+    .latest-work-container {
         width: 80%; 
         display: flex;
         justify-content: center;
@@ -298,241 +302,131 @@ a {
     #latest-work {
         flex-direction: column;
     }
-    /*vvvRename this class vvv*/
-
-    /*STOPPED HERE BOTTOM*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.text-block {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    background-color: var(--hover-blue );
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 17px;
-    box-shadow: 0px 4px 5px black;
-    width: 87%; 
-    max-width: 350px; 
-    top: 1%;
-    left: 1%; 
-    font-size: 18px;
-  }
-
-  .latest-work-description {
-    text-align: left;
-    color: white;
-    position:relative; /* Adjust positioning */
-    display:flex;
-    justify-content: center;
-    font-size: 17px;
-
-
-  }
-  h4 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 20px;
-    margin: inherit;
-}
-.footer-contact-me {
-    display: flex;
-    color: var(--main-font-color);
-    flex-wrap: none;
-    padding-left: 10px;
-    padding-top: 5px;
-    font-size: 1.5rem; /* Responsive font size */
-    flex-direction: column; /* Stack items vertically on smaller screens */
-}
-
-    /* Add more specific styles for smaller screens */
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Add styles for medium-sized screens */
-
-    .other-work {
-        height: 100%;
-        display: flex;
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
-        border-radius: 17px;
-        flex-direction: column; /* Stack items vertically on smaller screens */
     
-    }
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 0.5rem;
-    }
-
-    .other-work {
-        height: 100%;
-        display: flex;
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
-        border-radius: 17px;
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    
-    }
-    .work-section {
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
+    .latest-work-text-block {
         position:relative;
-        border: solid 2px white;
-        border-radius: 17px;
-        margin-bottom: 30px;
-        box-shadow: 0px 10px 10px black;
-        width: 80%; /* Make the section full width */
-        max-width: 1000px; /* Set a maximum width for larger screens */
-        margin: 0 auto; /* Center the section */
         display: flex;
         justify-content: center;
-        padding-top: 20px;
-    
+        width: 87%; 
+        max-width: 350px; 
+        top: 1%;
+        left: 1%; 
+        font-size: 18px;
     }
 
-    .latest-work-img {
-        /*position:absolute;*/
-        display: flex;
-        height: 300px; 
-        border-radius: 17px;
-        width: 100%; /* Make images responsive */
-        max-width: 900px; /* Set a maximum width for larger screens */
-        left: 0; /* Center image on smaller screens */
-    }
-    #latest-work {
+    .latest-work-description {
         display:flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-    }
-    
-    .latest-work-img {
-        display: flex;
         justify-content: center;
-        border-radius: 17px;
-        width: 100%; /* Make images responsive */
-        max-width: 600px; /* Set a maximum width for larger screens */
-        left: 0; /* Center image on smaller screens */
-    }
-
-.text-block {
-    position:relative;
-    bottom: 200px;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    background-color: var(--hover-blue );
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 17px;
-    box-shadow: 0px 4px 5px black;
-    width: 85%; /* Full width on smaller screens */
-    max-width: 400px; /* Set a maximum width for larger screens */
-    top: 1%;
-    left: 2.5%; /* Center text on smaller screens */
-    font-size: 18px;
-  }
-
-  .latest-work-description {
-    text-align: left;
-    color: white;
-    position:relative; /* Adjust positioning */
-    display:flex;
-    justify-content: center;
-    font-size: 17px;
-
-
-  }
-  h4 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 20px;
-    margin: inherit;
-}
-.footer-contact-me {
-    display: flex;
-    color: var(--main-font-color);
-    flex-wrap: none;
-    padding-left: 10px;
-    font-size: 1.5rem; /* Responsive font size */
-    flex-direction: column; /* Stack items vertically on smaller screens */
-}
-
-    /* Add more specific styles for smaller screens */
-}
-
-@media screen and (min-width: 1025px) {
-    /* Add styles for larger screens */
-
-    .work-section {
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
-        position:relative;
-        border: solid 2px white;
-        border-radius: 17px;
-        margin-bottom: 30px;
-        box-shadow: 0px 10px 10px black;
-        width: 100%; /* Make the section full width */
-        max-width: 1000px; /* Set a maximum width for larger screens */
-        margin: 0 auto; /* Center the section */
-        display: flex;
-
+        font-size: 17px;
     }
 
     h4 {
-        font-size: 30px;
-        color: white;
         text-align: center;
         position: relative;
         top: 20px;
         margin: inherit;
     }
 
+    .footer-contact-me {
+        padding-left: 10px;
+        padding-top: 5px;
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
 
-  .latest-work-description {
-    display: flex;
-    position: relative;
-    font-size: 18px;
-    text-align: left;
-    padding: 20px;
-    color: white;
-  }
+}
+
+    /* Medium Screens */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    header {
+        padding: 0.5rem;
+    }
+    
+    .other-work {
+        flex-direction: column;
+    }
+
+    h4 {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        margin: inherit;
+    }
+
+    .latest-work-container {
+        width: 80%; 
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #latest-work {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .latest-work-img {
+        height: 300px; 
+        max-width: 900px; 
+    }
+
+    .latest-work-text-block {
+        position:relative;
+        bottom: 200px;
+        display: flex;
+        justify-content: center;
+        width: 85%; 
+        top: 1%;
+        left: 2.5%;
+        font-size: 18px;
+    }
+
+    .latest-work-description {
+        display:flex;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    .footer-contact-me {
+        flex-wrap: none;
+        padding-left: 10px;
+        font-size: 1.5rem; 
+        flex-direction: column;
+    }
+
+}
+    /* Large Screens */
+
+@media screen and (min-width: 1025px) {
+
+    h4 {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        margin: inherit;
+    }
+
+    .latest-work-container {
+        display: flex;
+    }
+
+    .latest-work-description {
+        display: flex;
+        position: relative;
+        font-size: 18px;
+    }
 
     .other-work {
         width: 100%;
-        display: flex;
-        background: linear-gradient(rgb(26, 68, 102), rgb(12, 31, 47));
-        border-radius: 17px;
         padding: 10px;
-    
     }
 
    .footer-contact-me {
-    display: flex;
-    color: var(--main-font-color);
-    flex-wrap: none;
-    padding-left: 10px;
-    font-size: 1.5rem; /* Responsive font size */
-}
-
-    .contact-links {
-        display: flex;
-        border: solid 2px;
-        border-radius: 20px;
-        justify-content: center;
-        color: white;
-        width: 100%; /* Full width on smaller screens */
-        max-width: 600px; /* Set a maximum width for larger screens */
-        margin: 0 auto; /* Center the section */
+        padding-left: 10px;
+        font-size: 1.5rem;
     }
-    
-}
+}    
