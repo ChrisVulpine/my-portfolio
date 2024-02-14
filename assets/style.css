@@ -284,14 +284,6 @@ a {
         padding: 0.5rem;
     }
 
-    .other-work {
-        height: 100%;
-        display: flex;
-        border-radius: 17px;
-        flex-direction: column;
-    
-    }
-
     .latest-work-container {
         width: 80%; 
         display: flex;
@@ -325,6 +317,15 @@ a {
         position: relative;
         top: 20px;
         margin: inherit;
+    }
+
+    .other-work {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        border-radius: 17px;
+        flex-direction: column;
+    
     }
 
     .footer-contact-me {
